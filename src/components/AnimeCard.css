@@ -1,0 +1,108 @@
+.anime-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s;
+    margin: 15px;
+    width: 300px;
+    height:600px;
+  }
+  
+  .anime-card:hover {
+    transform: scale(1.05);
+  }
+
+  .cardinfo-link {
+    text-decoration: none;
+  }
+
+  .anime-image-wrap {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .anime-image-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+  }
+  
+  .cardinfo-wrap {
+    height:150px;
+    padding: 10px;
+    
+  }
+
+  .cardinfo-wrap h3 {
+    height:100px;
+    font-size: 2.0em;
+    margin: 0;
+    color: #333;
+    
+  }
+  
+  .cardinfo-wrap p {
+    margin: 5px 0;
+    color: #666;
+    font-size: 1.0em;
+  }
+
+  .cardinfo-ratings-wrap {
+    display:flex;
+    height:100px;
+  }
+  
+  .cardinfo-ratings-wrap svg {
+    width:30px;
+    height:30px;
+  }
+
+  .card-button-wrap {
+    height:40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    margin:5px;
+    background-color: #f8f8f8;
+  }
+  
+  .card-button-wrap label {
+    text-align: center;
+    font-size: 1.0em;
+  }
+
+  .card-button-wrap select {
+    max-width:50px;
+    height:40px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 1.0em;
+  }
+  
+  .card-button-wrap button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin:5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.0em;
+    transition: background-color 0.3s;
+  }
+  
+  .card-button-wrap button:hover {
+    background-color: #0056b3;
+  }
+  

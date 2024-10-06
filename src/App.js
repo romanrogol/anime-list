@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import AnimeList from './components/AnimeList';
+import AnimeDetail from './pages/AnimeDetail';
+import WatchLater from './pages/WatchLater';
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<AnimeList />} />
+        <Route path="/anime/:id" element={<AnimeDetail />} />
+        <Route path="/watch-later" element={<WatchLater />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
+
